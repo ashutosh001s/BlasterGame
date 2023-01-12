@@ -24,6 +24,9 @@ protected:
 	void MoveRight(float Value);
 	void EquipButtonPressed();
 	virtual void DelayFunction();
+	void CrouchButtonPressed();
+	void AimButtonPressed();
+	void AimButtonReleased();
 
 private:
 	UPROPERTY(VisibleAnywhere, Category = "Camera")
@@ -62,4 +65,5 @@ public:
 	bool IsWeaponEquipped();
 	FString GetPlayerName() const {return PlayerName;}
 	void SetPlayerName(const FString Name);
+	bool IsAiming();
 };
